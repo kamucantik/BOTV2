@@ -248,7 +248,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'simi':
       isAll = true
       if (m.isGroup) {
-        global.dfail('owner', m, conn)
+        global.dfail('user', m, conn)
         throw false
       } 
       chat.simi = isEnable
