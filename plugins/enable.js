@@ -246,10 +246,10 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       setting.jadibot = isEnable
       break
     case 'simi':
-      isAll = true
+      if (!(isAdmin || isOwner)) {
       if (m.isGroup) {
-        global.dfail('isAll', m, conn)
-        throw false
+        global.dfail('admin', m, conn)
+        throw 0
       } 
       chat.simi = isEnable
       break
