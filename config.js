@@ -4,7 +4,7 @@
 // Oscarbotz
 
 let fs = require('fs')
-global.owner = ['6285850539404', '6285850539404','6285850539404', '6285850539404', '6285850539404'] // Letakan nomor kamu disini
+global.owner = ['6281330900857'] // Letakan nomor kamu disini
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
